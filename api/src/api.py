@@ -78,7 +78,7 @@ debug_mode = int(os.environ['DEBUG'])
 if debug_mode > 0:
     log_lvl = logging.DEBUG
 else:
-    log_lvl - logging.ERROR
+    log_lvl = logging.ERROR
 logging.basicConfig(stream=sys.stdout, level=log_lvl)
 grabber_logger = logging.getLogger('StaffBot-Grabber')
 staffbot_grabber = StaffbotGrabber(grabber_logger)
