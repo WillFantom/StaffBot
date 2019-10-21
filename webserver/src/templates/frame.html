@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{pagetitle}}</title>
+    <style>
+        body {margin:25px;}
+
+        div.polaroid {
+            position: fixed;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            background-color: whitesmoke;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin-bottom: 25px;
+        }
+
+        div.container {
+            font-family: "Courier";
+            font-weight: bold;
+            font-size: 1.875em;
+            text-align: center;
+            padding: 5px 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        setTimeout(function() {
+            location.reload();
+        }, {{refresh_ms}});
+    </script>
+
+    <div class="polaroid">
+        <div id="member_name" class="container">
+            <p>{{name}}</p>
+        </div>
+        <img src="{{img_url}}" alt="{{name}}" style="width:100%">
+    </div>
+
+</body>
+</html>
